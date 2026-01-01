@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamlatdar Court – Goa | e-Filing Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef3f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .gov-logo img {
+            height: 85px;
+        }
+
+        .title h1 {
+            margin: 10px 0 0;
+            color: #004aad;
+            font-size: 28px;
+        }
+
+        .title p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #005ecb;
+        }
+
+        .hero {
+            background: #004aad;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 34px;
+        }
+
+        .content {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .login-section {
+            flex: 1;
+            padding: 25px;
+            margin-right: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .login-section h2 {
+            margin-top: 0;
+            color: #004aad;
+        }
+
+        .login-section label {
+            margin-top: 10px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .login-section input,
+        .login-section select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #b7c6d7;
+            border-radius: 4px;
+        }
+
+        .captcha-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .captcha-text {
+            padding: 8px 14px;
+            background: #e1e5ea;
+            border-radius: 4px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .login-links {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .login-links a {
+            display: block;
+            margin-top: 8px;
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+
+        .about-section {
+            flex: 1;
+            padding: 25px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .about-section h2 {
+            margin-top: 0;
+            color: #004aad;
+        }
+
+        button {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00337a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="gov-logo">
+            <img src="goaEmblem.png" alt="Goa Emblem">
+        </div>
+
+        <div class="title">
+            <h1>Mamlatdar Court – Goa</h1>
+            <p>Department of Revenue | Government of Goa</p>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Instructions</a>
+            <a href="#">File Case</a>
+            <a href="#">Track Case</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>e-Filing Portal for Mamlatdar Court</h2>
+        <p>Submit applications, notices, tenancy matters and other forms online.</p>
+    </section>
+
+    <section class="content">
+
+        <!-- Login Section -->
+        <div class="login-section">
+            <h2>Sign In</h2>
+
+            <label for="taluka">Select Taluka</label>
+            <select id="taluka">
+                <option>Select Taluka</option>
+                <option>Salcete</option>
+                <option>Bardez</option>
+                <option>Ponda</option>
+                <option>Quepem</option>
+                <option>Pernem</option>
+                <option>Bicholim</option>
+                <option>Sattari</option>
+                <option>Mormugao</option>
+                <option>Canacona</option>
+                <option>Tiswadi</option>
+            </select>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password">
+
+            <label>Captcha</label>
+            <div class="captcha-box">
+                <input type="text" placeholder="Enter Captcha">
+                <span class="captcha-text">G7K2A9</span>
+                <button>Refresh</button>
+            </div>
+
+            <button>Login</button>
+
+            <div class="login-links">
+                <a href="#" class="register-link">New User? Register Here</a>
+                <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+            <h2>About the Mamlatdar Court</h2>
+
+            <p style="font-size: 16px; line-height: 1.7;">
+                <strong>The Mamlatdar Court in Goa is a quasi-judicial authority</strong> functioning under the 
+                <strong>Goa Land Revenue Code, 1968</strong>. The Mamlatdar is responsible for maintaining 
+                administrative order related to land, tenancy, and local governance at the grassroots level.
+            </p>
+
+            <p style="font-size: 16px; line-height: 1.7;">
+                It handles a wide range of revenue and tenancy disputes including 
+                <strong>illegal encroachments, tenancy conflicts, partition issues, declaration applications, 
+                agricultural tenancy cases, and various land-related matters</strong>. 
+                These courts ensure quick, transparent, and citizen-friendly access to justice.
+            </p>
+
+            <h3>What this e-Filing Portal Offers:</h3>
+
+            <ul style="font-size: 16px; line-height: 1.7; margin-left: 20px;">
+                <li><strong>Convenient Online Filing</strong> – Submit applications, tenancy disputes, 
+                    complaints, and supporting documents without visiting the office.</li>
+
+                <li><strong>Document Upload Facility</strong> – Upload land records, tenancy forms, affidavits, 
+                    and case evidence securely.</li>
+
+                <li><strong>Real-Time Case Tracking</strong> – Stay updated with case progress, notices, orders, 
+                    and hearing dates from anywhere.</li>
+
+                <li><strong>Reduced Physical Visits</strong> – Save time, effort, and travel by performing all 
+                    essential tasks online.</li>
+
+                <li><strong>Faster and Transparent Processing</strong> – Digital submission helps reduce delays 
+                    and enhances transparency in case handling.</li>
+
+                <li><strong>Secure & User-Friendly</strong> – Ensures safe storage of documents and an intuitive 
+                    interface for citizens, advocates, and applicants.</li>
+            </ul>
+
+            <p style="font-size: 16px; line-height: 1.7;">
+                This portal is a major step by the 
+                <strong>Government of Goa</strong> towards 
+                <strong>efficient, transparent, and accessible public service delivery</strong>, ensuring 
+                quicker resolution of land and tenancy disputes at the Taluka level.
+            </p>
+        </div>
+
+    </section>
+
+</body>
+</html>
